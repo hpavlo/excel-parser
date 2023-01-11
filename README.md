@@ -17,6 +17,16 @@ If the user uploads the same file with changed content, only the changed data wi
 If the user wants to get data from the server, he can do it by generating a `.pdf` file and download it.
 
 ## 🚀 Features
+| Endpoints       | Description                                                                                                                                                                                                        |
+|:----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| POST:`register` | Allows the user to register using a login and password                                                                                                                                                             |
+| POST:`/login`   | Allows the user to login with a username and password and receive a jwt token                                                                                                                                      |
+| POST:`/upload`  | Through this endpoint, the user can send his excel file to the server, the data of which will be stored in the database                                                                                            |
+| GET:`/history`  | Get list of history books by name: `/history?name=fileName`                                                                                                                                                        |
+| GET:`/search`   | Searches all data by value and displays the detailed placement of each record: `/search?text=something`                                                                                                            |
+| GET:`/pdf`      | Creates a pdf file with the latest relevant data taken from the database of a specific file: `/pdf?name=fileName`                                                                                                  |
+| GET:`/pdf/{id}` | Allows you to get the same pdf file with the data of a specific file version in a table by its `id`. To get the id of the file in the table before executing this command, it is recommended to execute `/history` |
+The Swagger documentation of all endpoints is available in the program via the endpoint: `/swagger-ui.html`
 
 ## ⚙ Architecture
 |         3-layer architecture        |
