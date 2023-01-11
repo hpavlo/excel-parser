@@ -11,7 +11,7 @@
 </p>
 
 ## 📃 Description
-This is a simple API for working with excel files. The program reads data from the attached file and places it in the database.
+This is a simple REST-API for working with Excel files. The program reads data from the attached file and places it in the database.
 Two types of files with the extension `.xlsx` and `.xls` are available for processing.
 If the user uploads the same file with changed content, only the changed data will be stored in the database and access to the previous version of the file will also be available.
 If the user wants to get data from the server, he can do it by generating a `.pdf` file and download it.
