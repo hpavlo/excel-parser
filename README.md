@@ -46,7 +46,7 @@ The Swagger documentation of all endpoints is available in the program via the e
 | MySQL                  | 8.0.22  |
 | Spring Boot            | 2.7.3   |
 | Liquibase              | 4.9.1   |
-| Jsonwebtoken           | 0.9.1   |
+| Json Web Token         | 0.9.1   |
 | Apache poi             | 5.2.0   |
 | Itextpdf               | 5.5.10  |
 | Swagger                | 2.9.2   |
