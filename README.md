@@ -26,6 +26,7 @@ If the user wants to get data from the server, he can do it by generating a `.pd
 | GET:`/search`   | Searches all data by value and displays the detailed placement of each record: `/search?text=something`                                                                                                            |
 | GET:`/pdf`      | Creates a pdf file with the latest relevant data taken from the database of a specific file: `/pdf?name=fileName`                                                                                                  |
 | GET:`/pdf/{id}` | Allows you to get the same pdf file with the data of a specific file version in a table by its `id`. To get the id of the file in the table before executing this command, it is recommended to execute `/history` |
+
 The Swagger documentation of all endpoints is available in the program via the endpoint: `/swagger-ui.html`
 
 ## ⚙ Architecture
