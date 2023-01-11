@@ -1,5 +1,6 @@
 package com.example.excelparser.dto.response;
 
+import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,6 +8,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class MessageResponse {
-    private String message;
+public class FileHistoryResponse {
+    private Long id;
+    private String name;
+    private LocalDateTime timeHistory;
 }

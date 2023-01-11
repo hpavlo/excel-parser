@@ -5,6 +5,7 @@ import com.example.excelparser.dto.request.RegisterRequest;
 import com.example.excelparser.dto.response.JwtResponse;
 import com.example.excelparser.dto.response.MessageResponse;
 import com.example.excelparser.service.AuthenticationService;
+import io.swagger.annotations.ApiOperation;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.GrantedAuthority;
@@ -22,12 +23,12 @@ public class AuthenticationController {
     }
 
     @PostMapping("/register")
+    @ApiOperation("Register new user")
     public ResponseEntity<?> register(@RequestBody RegisterRequest registerRequest) {
         String login = registerRequest.getUsername();
         String password = registerRequest.getPassword();
         if (authenticationService.usernameAvailabilityCheck(login)) {
-            return ResponseEntity
-                    .badRequest()
+            return ResponseEntity.badRequest()
                     .body(new MessageResponse("Username is already taken!"));
         }
         authenticationService.register(login, password);
@@ -35,6 +36,7 @@ public class AuthenticationController {
     }
 
     @PostMapping("/login")
+    @ApiOperation("Login method")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {
         String login = loginRequest.getUsername();
         String password = loginRequest.getPassword();

@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - include:
+      file: /db/changelog/changes/create-roles-table.sql
+  - include:
+      file: /db/changelog/changes/create-users-table.sql
+  - include:
+      file: /db/changelog/changes/create-users-roles-table.sql
+  - include:
+      file: /db/changelog/changes/create-excel-books-table.sql
+  - include:
+      file: /db/changelog/changes/create-excel-sheets-table.sql
+  - include:
+      file: /db/changelog/changes/create-excel-rows-table.sql
+  - include:
+      file: /db/changelog/changes/create-excel-cells-table.sql
+  - include:
+      file: /db/changelog/changes/create-excel-books-sheets-table.sql
+  - include:
+      file: /db/changelog/changes/create-excel-sheets-rows-table.sql
+  - include:
+      file: /db/changelog/changes/create-excel-rows-cells-table.sql
+  - include:
+      file: /db/changelog/changes/add-user-role-to-roles-table.sql
