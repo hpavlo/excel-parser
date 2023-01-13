@@ -19,7 +19,7 @@ If the user wants to get data from the server, he can do it by generating a `.pd
 ## 🚀 Features
 | Endpoints       | Description                                                                                                                                                                                                        |
 |:----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| POST:`register` | Allows the user to register using a login and password                                                                                                                                                             |
+| POST:`/register` | Allows the user to register using a login and password                                                                                                                                                             |
 | POST:`/login`   | Allows the user to login with a username and password and receive a jwt token                                                                                                                                      |
 | POST:`/upload`  | Through this endpoint, the user can send his excel file to the server, the data of which will be stored in the database                                                                                            |
 | GET:`/history`  | Get list of history books by name: `/history?name=fileName`                                                                                                                                                        |
